@@ -13,4 +13,5 @@ grep -o "Bobcat" "$source_file" > "$spoils_file"
 #this modifies (sed) the text of the source_file in place (-i) with the text that we want to sub it with in all instances (g)
 sed -i '' 's/Bobcat/Excavator/g' "$source_file"
 
+#this creates an MacOS notification to let you know the job has completed
 osascript -e "display notification \"Bill says thanks!\" with title \"Hard Work Is Done!\""
